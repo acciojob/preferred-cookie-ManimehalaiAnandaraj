@@ -7,19 +7,18 @@
 
   <body>
     <!-- the entire body must be written by student -->
-<h2>Customize Font</h2>
-
-<form id="fontForm">
-    <label for="fontsize">Font Size:</label>
-    <input type="number" id="fontsize" value="16" name="fontsize"  min="8" max="72">
+ <h2>Customize Font</h2>
+    <form id="fontForm" onsubmit="savePreferences(event)">
+        <label for="fontsize">Font Size:</label>
+        <input type="number" id="fontsize" value="16" name="fontsize" min="8" max="72">
         <br><br>
 
+        <label for="fontcolor">Font Color:</label>
+        <input type="color" id="fontcolor" name="fontcolor" value="#000000">
+        <br><br>
 
-    <label for="fontcolor">Font Color:</label>
-    <input type="color" id="fontcolor" name="fontcolor" value="#000000"><br><br>
-
-    <input type="submit" onclick="savePreferences(event)" value="Save">
-</form>
+        <input type="submit" value="Save">
+    </form>
 
     <script type="text/javascript" src="./script.js" onclick=" "></script>
   </body>

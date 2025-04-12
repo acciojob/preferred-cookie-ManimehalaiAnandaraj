@@ -11,13 +11,8 @@
 
 <form id="fontForm">
     <label for="fontsize">Font Size:</label>
-    <select id="fontsize" name="fontsize">
-        <option value="12px">12px</option>
-        <option value="14px">14px</option>
-        <option value="16px" selected>16px</option>
-        <option value="18px">18px</option>
-        <option value="20px">20px</option>
-    </select><br><br>
+    <input type="number" id="fontsize" name="fontsize" range min="8" max="72">
+        <br><br>
 
     <label for="fontcolor">Font Color:</label>
     <input type="color" id="fontcolor" name="fontcolor" value="#000000"><br><br>

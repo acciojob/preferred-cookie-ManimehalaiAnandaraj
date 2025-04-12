@@ -37,8 +37,8 @@ function applyPreferences() {
 
 // Function to save preferences
 function savePreferences() {
-    var fontSize = document.getElementById("fontSize").value;
-    var fontColor = document.getElementById("fontColor").value;
+    var fontSize = document.getElementById("fontsize").value;
+    var fontColor = document.getElementById("fontcolor").value;
 
     setCookie("fontSize", fontSize, 30); // Save for 30 days
     setCookie("fontColor", fontColor, 30); // Save for 30 days

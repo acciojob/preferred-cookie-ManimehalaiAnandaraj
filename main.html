@@ -1,28 +1,24 @@
 <!DOCTYPE html>
-
 <html>
-  <head>
+<head>
     <link rel="stylesheet" href="styles.css" />
-  </head>
-
-  <body>
-    <!-- the entire body must be written by student -->
- <h2>Customize Font</h2>
+</head>
+<body>
+    <h2>Customize Font</h2>
     <form id="fontForm" onsubmit="savePreferences(event)">
         <label for="fontsize">Font Size:</label>
         <input type="number" id="fontsize" value="16" name="fontsize" min="8" max="72">
         <br><br>
 
         <label for="fontcolor">Font Color:</label>
-        <input type="color" id="fontcolor" name="fontcolor"  value="#000000">
+        <input type="color" id="fontcolor" name="fontcolor" value="#000000">
         <br><br>
 
         <input type="submit" value="Save">
     </form>
 
-    <script type="text/javascript" src="./script.js" onclick=" "></script>
-		<script>
-		function setCookie(name, value, days) {
+    <script type="text/javascript">
+        function setCookie(name, value, days) {
             var expires = "";
             if (days) {
                 var date = new Date();
@@ -66,10 +62,13 @@
             setCookie("fontColor", fontColor, 30); // Save for 30 days
 
             applyPreferences(); // Apply the preferences immediately
+
+            // Optional: Provide feedback to the user
+            alert("Preferences saved!"); // You can customize this message
         }
 
         // Apply preferences on page load
         window.onload = applyPreferences;
-	</script>
-  </body>
+    </script>
+</body>
 </html>

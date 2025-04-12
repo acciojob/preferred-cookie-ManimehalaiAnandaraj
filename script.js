@@ -27,11 +27,11 @@ function applyPreferences() {
 
     if (savedFontSize) {
         document.body.style.fontSize = savedFontSize;
-        document.getElementById("fontSize").value = savedFontSize;
+        document.getElementById("fontsize").value = savedFontSize;
     }
     if (savedFontColor) {
         document.body.style.color = savedFontColor;
-        document.getElementById("fontColor").value = savedFontColor;
+        document.getElementById("fontcolor").value = savedFontColor;
     }
 }
 

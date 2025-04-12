@@ -11,14 +11,14 @@
 
 <form id="fontForm">
     <label for="fontsize">Font Size:</label>
-    <input type="number" id="fontsize" value="16" name="fontsize" range min="8" max="72">
+    <input type="number" id="fontsize" value="16" name="fontsize" range min="8px" max="72px">
         <br><br>
 
 
     <label for="fontcolor">Font Color:</label>
     <input type="color" id="fontcolor" name="fontcolor" value="#000000"><br><br>
 
-    <input type="submit" onclick="savePreferences()" value="Save"></button>
+    <input type="submit" onclick="savePreferences(event)" value="Save">
 </form>
 
     <script type="text/javascript" src="./script.js" onclick=" "></script>

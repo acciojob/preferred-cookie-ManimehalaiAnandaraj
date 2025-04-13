@@ -40,8 +40,8 @@
         }
 
         function applyPreferences() {
-            var savedFontSize = getCookie("fontSize");
-            var savedFontColor = getCookie("fontColor");
+            var savedFontSize = getCookie("fontsize");
+            var savedFontColor = getCookie("fontcolor");
 
             if (savedFontSize) {
                 document.body.style.fontSize = savedFontSize + "px"; // Ensure units are included
@@ -55,11 +55,11 @@
 
         function savePreferences(event) {
             event.preventDefault(); // Prevent the form from submitting
-            var fontSize = document.getElementById("fontsize").value;
-            var fontColor = document.getElementById("fontcolor").value;
+            var fontsize = document.getElementById("fontsize").value;
+            var fontcolor = document.getElementById("fontcolor").value;
 
-            setCookie("fontSize", fontSize, 30); // Save for 30 days
-            setCookie("fontColor", fontColor, 30); // Save for 30 days
+            setCookie("fontsize", fontSize, 30); // Save for 30 days
+            setCookie("fontcolor", fontColor, 30); // Save for 30 days
 
             applyPreferences(); // Apply the preferences immediately
 
